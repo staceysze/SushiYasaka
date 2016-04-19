@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--- This is an ongoing project!  ---> 
+
+<html lang="en-us">
+<html>
+  <head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Gallery.css" rel="stylesheet" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="nav">
+      <ul id="nav_ul">
+        <li><a href="Home.html">HOME</a></li>
+        <li><a href="Menu.html">MENU</a></li>
+        <li id="title"><a href="Home.html"><img src="title.png" alt="Logo Here" width="150px" height="25px"></a></li>
+        <li><a href="Gallery.html">GALLERY</a></li>
+        <li><a href="http://www.opentable.com/sushi-yasaka">RESERVATIONS</a></li>
+      </ul>
+    </div>
+    <!----------------->
+    <!--- Header ---->
+    <div id="logo">
+      <img src="logo.png" alt="Logo Here" width="125px" height="125px"/>
+    </div>
+    <!---------------->
+
+    <div class="container">
+      <div id="main" class="row">
+        <div id="kakifry1" class="img col-sm-6">
+          <img src="kakifry1.jpg" alt="Picture Here" height="260px" width="350px"/>
+        </div>
+        <div id="ikayaki" class="img col-sm-6">
+          <img src="ikayaki.jpg" alt="Picture Here" height="250px" width="350px"/>
+        </div>
+        <div id="uminosachi" class="img col-sm-6">
+          <img src="uminosachi.jpg" alt="Picture Here" height="220px" width="350px"/>
+        </div>
+        <div id="ebishinjo" class="img col-sm-6">
+          <img src="ebishinjo.jpg" alt="Picture Here" height="250px" width="350px"/>
+        </div>
+      </div>
+    </div>
+    <div>
+      <ul class="photolist">
+        <li>
+          <figure>
+              <img src="ankimo1.jpg" alt="Picture Here" height="350px" width="350px"/>
+              <figcaption>Ankimo</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+              <img src="ksoba.jpg" alt="Picture Here" height="350px" width="350px"/>
+              <figcaption>Kanto Soba</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="photolist">
+        <li>
+          <figure>
+              <img src="mini.jpg" alt="Picture Here" height="250px" width="350px"/>
+              <figcaption>Mini Omakase</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+              <img src="sscrab.jpg" alt="Picture Here" height="250px" width="350px"/>
+              <figcaption>Soft Shell Crab Roll</figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+    <!--- Header ----->
+    <div id="footer">
+      <div id="social" class="text-center">
+          <div class="icons">
+            <a href="https://www.facebook.com/sushiyasaka/" target="_blank"><img src="facebook.png" alt="Facebook" height="50px" width="50px"/></a>
+          </div>
+          <div class="icons">
+            <a href="https://www.instagram.com/sushiyasaka/" target="_blank"><img src="instagram.png" alt="Instagram" height="50px" width="50px"/></a>
+          </div>
+          <div class="icons">
+            <a href="https://www.yelp.com/biz/sushi-yasaka-new-york" target="_blank"><img src="yelp.png" alt="Yelp" height="50px" width="50px"/></a>
+          </div>
+          <div class="icons">
+            <a href="https://twitter.com/sushiyasaka" target="_blank"><img src="twitter.png" alt="Twitter" height="50px" width="50px"/></a>
+          </div>
+      </div>
+      <div id="contact">
+        <p>251 W 72ND ST, NEW YORK, NY, 10023, UNITED STATES | (212) 496-8460 | SUSHIYASAKANYC@GMAIL.COM</p>
+      </div>
+    </div>
+    <!------------------>
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript">
+      (function($) {
+          $(document).ready(function(){
+              $(window).scroll(function(){
+                  if ($(this).scrollTop() > 120) {
+                      $('#nav').fadeIn(500);
+                  } else {
+                      $('#nav').fadeOut(500);
+                  }
+              });
+          });
+      })(jQuery);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
